@@ -17,7 +17,8 @@
 }
 
 .cabecalho {
-    padding: 2% 0 0 15%;
+    padding: 2% 0 2% 15%;
+    border-bottom: 0.4px solid var(--cor-escrita);
 }
 
 .cabecalho__menu {
@@ -44,38 +45,39 @@ body {
     color: var(--cor-escrita);
 }
 
-.landing-page {
+.principal {
     /* margin: 10% 20%; */
-    padding: 9% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 82px;
+    /* border-top: 0.4px solid var(--cor-escrita); */
 }
 
-.landing-page__texto {
+.principal__texto {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
-.landing-page__texto__titulo {
+.principal__texto__titulo {
     font-family: var(--fonte-titulo);
     font-size: 2rem;
 }
 
-.landing-page__texto__pequeno {
+.principal__texto__pequeno {
     font-size: 1.5rem;
     font-family: var(--fonte-escrita);
 }
 
-.landing-page__texto__sobre-mim {
+.principal__texto__sobre-mim {
     font-family: var(--fonte-escrita);
     font-size: 1rem;
 }
 
-.landing-page__links {
+.principal__links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,13 +85,13 @@ body {
     gap: 0.75rem;
 }
 
-.landing-page__links__subtitulo {
+.principal__links__subtitulo {
     font-family: var(--fonte-titulo);
     font-weight: 400;
     font-size: 1.5rem;
 }
 
-.landing-page__links__botao {
+.principal__links__botao {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -106,15 +108,15 @@ body {
     padding: 0.65rem 0;
 }
 
-.landing-page__links__botao:hover {
+.principal__links__botao:hover {
     background-color: var(--cor-botao-hover);
 }
 
-.landing-page__links__botao img {
+.principal__links__botao img {
     filter: invert(100%) grayscale(0%) saturate(95%);
 }
 
-.landing-page__links__botao:hover img {
+.principal__links__botao:hover img {
     filter: invert(0%) grayscale(100%) saturate(1000%) sepia(100%) brightness(1000%);
 }
 
@@ -143,24 +145,27 @@ body {
 
 @media (max-width: 800px) {
     .cabecalho {
-        padding: 10%;
+        padding: 6%;
     }
 
     .cabecalho__menu {
         justify-content: center;
     }
 
-    .landing-page {
+    .principal {
         flex-direction: column-reverse;
-        padding: 0 5% 5% 5%;
+        padding: 8% 5% 5% 5%;
         /* padding: cima direita baixo esquerda */
     }
 
-    .landing-page__texto {
+    .principal__texto {
         width: auto;
+        gap: 2.5rem;
     }
 
     .foto-perfil {
         width: 50%;
     }
+
+
 }
