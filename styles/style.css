@@ -18,7 +18,7 @@
 
 .cabecalho {
     padding: 2% 0 2% 15%;
-    border-bottom: 0.4px solid var(--cor-escrita);
+    /* border-bottom: 0.4px solid var(--cor-escrita); */
 }
 
 .cabecalho__menu {
